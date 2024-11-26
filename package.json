@@ -6,13 +6,15 @@
   "scripts": {
     "test": "npx playwright test",
     "test:ci": "npx playwright test --trace on",
-    "test:ci:smoke": "npx playwright test --trace on -g \"@smoke\""
+    "test:ci:smoke": "npx playwright test --trace on -g \"@smoke\"",
+    "lint": "npx eslint ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.49.0",
-    "@types/node": "^22.10.0"
+    "@types/node": "^22.10.0",
+    "eslint-plugin-playwright": "^2.1.0"
   }
 }
